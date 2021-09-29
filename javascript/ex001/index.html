@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maior valor</title>
+    <style>
+        body { 
+            background-color: blueviolet;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        main {
+         background-color: chocolate;
+            width: 3000px;
+            padding: 30px;
+            border-radius: 150px;
+            margin: auto;
+
+            
+            
+        
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Maior Valor</h1>
+        <form action="salvar.php" method="get" onsubmit="return verifica()"> 
+            <label for="v1">Valor 1: </label>
+            <input type="number" name="v1" id="v1" min=0 max="100" value="0">
+
+            <br><label for="v2">valor 2 </label> 
+            <input type="number" name="v2" id="v2"min=o max=160 value="0">
+            <br><input type="submit" value="verificar">
+        </form>
+        <p id="res">Resultado final</p>
+          
+        
+        
+        
+
+    </main>
+    <script>
+        function verifica() {
+            let num1 = Number(document.getElementById("v1").value)
+            let num2 = Number(document.getElementById("v2").value)
+
+            let final = document.getElementById("res")
+            if (num1 > num2) {
+                final.innerHTML = `O primeiro valor ${num1} é maior`
+            }else if {num2  }
+    
+
+    
+
+            
+
+            
+    
+    
+            return false
+        }
+
+    </script>
+        
+</body>
+</html>
